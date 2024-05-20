@@ -1,76 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.dun {
+.main_content {
     padding: 80px 0;
 }
 
-.dun .tit_area {
-    text-align: center;
-    margin: 0 0 24px 0;
+
+.main_content .tit {
+    margin: 0 0 40px 0;
 }
 
-.dun .tit_area h2 {
-    margin: 0 0 24px 0;
-}
-
-.dun .tit_area strong {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 18px 0;
-}
-
-.dun .tit_area p {
-    font-size: 12px;
-}
-
-.dun .inner {
+.main_content .inner {
+    width: 1170px;
+    margin: 0 auto;
     display: flex;
     gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
-.dun .inner figure {
-    flex: 1;
-}
-
-.dun .inner figure img {
-    width: 100%;
-}
-
-.dun .inner figure strong {
-    display: block;
-    font-size: 18px;
+.main_content .tit h2 {
+    margin: 0 0 16px 0;
     text-align: center;
-    margin: 0 0 24px 0;
+    font-size: 32px;
+    font-weight: 800;
 }
 
-.dun .inner figure a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    border: 1px solid #333;
-    font-size: 12px;
-    padding: 4px 16px;
-    border-radius: 4px;
-}
-
-.dun .inner figure img {
-    transform: 0.5s;
-    background: #fff;
-    vertical-align: middle;
-    border-radius: 50%;
-}
-
-.dun .inner figure:hover img {
-    transform: translate(12px, -12px);
-}
-
-.dun .inner figure .img_box {
-    background: tomato;
-    border-radius: 50%;
+.main_content .tit p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
 }
