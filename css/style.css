@@ -115,3 +115,126 @@
 .main_visual .main_visual_slide .slick-dots li.slick-active button {
     background: tomato;
 }
+.main_content {}
+
+.main_content .tit {
+  margin: 0 auto 40px auto;
+}
+.main_content .tit h2 {
+  text-align: center;
+}
+.main_content .tit .desc {
+  text-align: center;
+}
+
+.main_content .inner {
+  display: flex;
+  gap: 30px;
+}
+.main_content .inner>* {
+  flex: 1;
+}
+
+.main_content .itm {}
+
+.main_content .itm .img_box {
+  margin: 0 0 24px 0;
+}
+
+.main_content .itm .stit {
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.main_content .itm .desc {
+  text-align: center;
+  margin: 0 0 32px 0;
+  word-break: keep-all;
+  padding: 0 16px;
+  min-height: 48px;
+}
+
+.main_content .itm .order {
+  text-align: center;
+}
+.main_content .itm .btn {
+  color: #008850;
+  border: 1px solid #008850;
+}
+
+.main_product {
+  position: relative;
+}
+
+.main_product .tit {
+  margin: 0 auto 40px auto;
+}
+
+.main_product .inner {
+  overflow: hidden;
+}
+
+.main_product .main_product_slide {
+  margin: 0 -15px;
+}
+.main_product .main_product_slide .itm {
+  margin: 0 15px;
+}
+
+.main_product .main_product_slide .itm strong {
+  text-align: center;
+  margin: 16px 0 0 0;
+}
+
+.main_product .arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1410px;
+  width: 100%;
+}
+
+.main_product .arrows button {
+  position: absolute;
+}
+
+.main_product .arrows .prev {
+  left: 0;
+}
+
+.main_product .arrows .next {
+  right: 0;
+}
+
+.main_product .arrows button i {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main_product .main_product_slide .slick-dots {
+  text-align: center;
+  margin: 32px 0 0 0;
+}
+
+.main_product .main_product_slide .slick-dots li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.main_product .main_product_slide .slick-dots li button {
+  background: #ddd;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.main_product .main_product_slide .slick-dots li.slick-active button {
+  background: #84bf22;
+}
+
