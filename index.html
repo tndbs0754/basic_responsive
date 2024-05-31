@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>릴리바이레드</title>
+    <title>릴리바이레드 홈페이지 만들기</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="./js/jquery-1.12.4.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/custom.js"></script>
 </head>
 
@@ -51,46 +53,57 @@
             </div>
 
         </section>
-        <section class="main_content">
+        <section class="main_content default">
             <div class="tit">
                 <h2>my cosmetics content</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, earum?</p>
+                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, earum?</p>
             </div>
             <div class="inner">
                 <div class="itm">
                     <figure class="img_box">
                         <img src="./images/main_content01.jpg" alt="main_content">
                     </figure>
-                    <strong class="stit">틴트</strong>
+                    <strong class="stit">화장품</strong>
                     <p class="desc">색깔이 너무 예뻐요<br />
                         많이 사가세요</p>
                     <div class="order">
                         <a href="" class="btn">구매하기</a>
                     </div>
-                    <div class="itm">
-                        <figure class="img_box">
-                            <img src="./images/main_content02.jpg" alt="main_content">
-                        </figure>
-                        <strong class="stit">틴트</strong>
-                        <p class="desc">색깔이 너무 예뻐요<br />
-                            많이 사가세요</p>
-                        <div class="order">
-                            <a href="" class="btn">구매하기</a>
-                        </div>
-                        <div class="itm">
-                            <figure class="img_box">
-                                <img src="./images/main_content03.jpg" alt="main_content">
-                            </figure>
-                            <strong class="stit">틴트</strong>
-                            <p class="desc">색깔이 너무 예뻐요<br />
-                                많이 사가세요</p>
-                            <div class="order">
-                                <a href="" class="btn">구매하기</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="itm">
+                    <figure class="img_box">
+                        <img src="./images/main_content02.jpg" alt="main_content">
+                    </figure>
+                    <strong class="stit">화장품</strong>
+                    <p class="desc">색깔이 너무 예뻐요<br />
+                        많이 사가세요</p>
+                    <div class="order">
+                        <a href="" class="btn">구매하기</a>
                     </div>
+                </div>
+                <div class="itm">
+                    <figure class="img_box">
+                        <img src="./images/main_content03.jpg" alt="main_content">
+                    </figure>
+                    <strong class="stit">화장품</strong>
+                    <p class="desc">색깔이 너무 예뻐요<br />
+                        많이 사가세요</p>
+                    <div class="order">
+                        <a href="" class="btn">구매하기</a>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div class="main_product default">
+        <section class="main_movie default">
+            <div class="tit">
+                <h2>my cosmetics product</h2>
+                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, impedit.</p>
+            </div>
+            <div id="bgndVideo" class="player" data-property></div>
+            <button class="switch"></button>
+        </section>
+        </section>
+        <section class="main_product default">
             <div class="tit">
                 <h2>my cosmetics product</h2>
                 <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, commodi!</p>
@@ -99,65 +112,103 @@
                 <div class="main_product_slide">
                     <div class="itm">
                         <figure>
-                            <img src="./images/main_product_slide01.jpg" alt="">
+                            <img src="./images/main_product_slide01.jpg" alt="main_product">
                         </figure>
                         <strong></strong>
                     </div>
                     <div class="itm">
                         <figure>
-                            <img src="./images/main_product_slide02.jpg" alt="">
+                            <img src="./images/main_content_slide02.jpg" alt="main_product">
                         </figure>
                         <strong></strong>
                     </div>
                     <div class="itm">
                         <figure>
-                            <img src="./images/main_product_slide03.jpg" alt="">
+                            <img src="./images/main_content_slide03.jpg" alt="main_product">
                         </figure>
                         <strong></strong>
                     </div>
                     <div class="itm">
                         <figure>
-                            <img src="./images/main_product_slide04.jpg" alt="">
+                            <img src="./images/main_content_slide04.jpg" alt="main_product">
                         </figure>
                         <strong></strong>
                     </div>
                     <div class="itm">
                         <figure>
-                            <img src="./images/main_product_slide05.jpg" alt="">
+                            <img src="./images/main_content_slide05.jpg" alt="main_product">
+                        </figure>
+                        <strong></strong>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide06.jpg" alt="main_product">
                         </figure>
                         <strong></strong>
                     </div>
                 </div>
             </div>
-             <div class="arrows">
+            <div class="arrows">
                 <button class="prev">
                     <i class="xi-arrow-left"></i>
                 </button>
                 <button class="next">
-                    <i class="si-arrow-right"></i>
+                    <i class="xi-arrow-right"></i>
                 </button>
             </div>
-            </selection>
+
+        </section>
+
+        <section class="main_event default">
+            <div class="tit">
+                <h2>my cosmetics product</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, commodi!</p>
+                <div class="arrows">
+                    <button class="prev">
+                        <i class="xi-arrow-left"></i>
+                    </button>
+                    <button class="next">
+                        <i class="xi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="inner--">
+                <div class="main_event_slide">
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_product_slide01.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide02.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide03.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide04.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide05.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                    <div class="itm">
+                        <figure>
+                            <img src="./images/main_content_slide06.jpg" alt="main_event">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
-            <footer class="footer">
-        <div class="inner">
-            <div class="ft">
-                <ul class="customer">
-                    <li><a href="">회사소개</a></li>
-                    <li><a href="">인재채용</a></li>
-                    <li><a href="">제휴제안</a></li>
-                    <li><a href="" class="b">개인정보처리방침</a></li>
-                    <li><a href="">이용약관</a></li>
-                </ul>
-                <ul class="sns_link">
-                    <li><a href="" target="_blank"><i class="xi-instagram"></i></a></li>
-                    <li><a href="" target="_blank"><i class="xi-facebook"></i></a></li>
-                    <li><a href="" target="_blank"><i class="xi-youtube"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

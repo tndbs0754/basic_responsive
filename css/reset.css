@@ -23,4 +23,18 @@ body {
 img {
     vertical-align: middle;
     max-width: 100%;
+    border: 0;
+}
+
+button {
+    border: none;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+address,
+i,
+em {
+    font-style: normal;
 }
