@@ -4,211 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>릴리바이레드 홈페이지 만들기</title>
+    <title>독도체험관 따라 만들기</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css?ver=1.0">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
     <script src="./js/jquery-1.12.4.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
-    <script src="./js/custom.js"></script>
+    <script src="./js/custom.js?ver=1.0"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="inner">
-            <h1><a href="/"><img src="./images/logo2.png" alt=""></a></h1>
-            <nav class="gnb">
-                <ul>
-                    <li><a href="">shop</a></li>
-                    <li><a href="">brand</a></li>
-                    <li><a href="">event</a></li>
-                    <li><a href="">community</a></li>
+    <div id="skip">
+        <a href="#content">본문 바로가기</a>
+    </div>
+    <div class="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1>
+                    <a href="/">
+                        <img src="./images/logo_simbol.svg" alt="독도체험관 따라만들기">
+                        <img src="./images/logo_tx.svg" alt="독도체험관 따라만들기">
+                    </a>
+                </h1>
+                <nav id="gnb">
+                    <ul>
+                        <li><a href="">체험관 소개</a>
+                            <ul>
+                                <li><a href="">인사말</a></li>
+                                <li><a href="">체험관 연혁</a></li>
+                                <li><a href="">오시는길</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">관람 정보</a>
+                            <ul>
+                                <li><a href="">관람안내</a></li>
+                                <li><a href="">단체예약</a></li>
+                                <li><a href="">예약확인·취소</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">전시 안내</a></li>
+                        <li><a href="">독도 자료실</a>
+                            <ul>
+                                <li><a href="">독도현황</a></li>
+                                <li><a href="">독도사진</a></li>
+                                <li><a href="">교육자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">열린광장</a>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">포토앨범</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="util">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
                 </ul>
-            </nav>
-            <div class="utils">
-                </form>
-                <button>
-                    <i class="xi-search"></i>
-                </button>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="main_visual">
-            <div class="slg">
-                <h2>Lorem ipsum dolor sit.</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, incidunt.</p>
-                <a href="" class="btn">more</a>
-            </div>
+        </header>
+        <main id="content">
+            <section id="mainVisual" class="">
+                <h2 class="blind">메인콘텐츠</h2>
+                <div class="swiper main_visual_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide itm01 itm">
+                            <div class="slide-img" data-swiper-parallax="45%"></div>
+                            <div class="slg">
+                                <div class="img_box">
+                                    <img src="./images/visual_tx.svg" alt="">
+                                </div>
+                                <p>독도에 대한 의미를 되새기는 특별한 공간,<br />
 
-            <div class="main_visual_slide">
-                <div class="itm itm01">01</div>
-                <div class="itm itm02">02</div>
-                <div class="itm itm03">03</div>
-            </div>
+                                    독도의 삶과 역사를 잊지
+                                    않기 위해 독도체험관이 앞장서겠습니다.
+                                </p>
+                                <a href="" class="btn ws">전시안내보기</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide itm02 itm">
+                            <div class="slide-img" data-swiper-parallax="45%"></div>
+                            <div class="slg">
+                                <div class="img_box">
+                                    <img src="./images/visual_tx.svg" alt="">
+                                </div>
+                                <p>독도에 대한 의미를 되새기는 특별한 공간,<br />
 
-        </section>
-        <section class="main_content default">
-            <div class="tit">
-                <h2>my cosmetics content</h2>
-                <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, earum?</p>
-            </div>
-            <div class="inner">
-                <div class="itm">
-                    <figure class="img_box">
-                        <img src="./images/main_content01.jpg" alt="main_content">
-                    </figure>
-                    <strong class="stit">화장품</strong>
-                    <p class="desc">색깔이 너무 예뻐요<br />
-                        많이 사가세요</p>
-                    <div class="order">
-                        <a href="" class="btn">구매하기</a>
+                                    독도의 삶과 역사를 잊지
+                                    않기 위해 독도체험관이 앞장서겠습니다.
+                                </p>
+                                <a href="" class="btn ws">전시안내보기</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="itm">
-                    <figure class="img_box">
-                        <img src="./images/main_content02.jpg" alt="main_content">
-                    </figure>
-                    <strong class="stit">화장품</strong>
-                    <p class="desc">색깔이 너무 예뻐요<br />
-                        많이 사가세요</p>
-                    <div class="order">
-                        <a href="" class="btn">구매하기</a>
-                    </div>
+                <div class="scroll">
+                    scroll
                 </div>
-                <div class="itm">
-                    <figure class="img_box">
-                        <img src="./images/main_content03.jpg" alt="main_content">
-                    </figure>
-                    <strong class="stit">화장품</strong>
-                    <p class="desc">색깔이 너무 예뻐요<br />
-                        많이 사가세요</p>
-                    <div class="order">
-                        <a href="" class="btn">구매하기</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="main_movie default">
-            <div class="tit">
-                <h2>my cosmetics product</h2>
-                <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, impedit.</p>
-            </div>
-            <div id="bgndVideo" class="player" data-property></div>
-            <button class="switch"></button>
-        </section>
-        </section>
-        <section class="main_product default">
-            <div class="tit">
-                <h2>my cosmetics product</h2>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, commodi!</p>
-            </div>
-            <div class="inner">
-                <div class="main_product_slide">
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_product_slide01.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide02.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide03.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide04.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide05.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide06.jpg" alt="main_product">
-                        </figure>
-                        <strong></strong>
-                    </div>
-                </div>
-            </div>
-            <div class="arrows">
-                <button class="prev">
-                    <i class="xi-arrow-left"></i>
-                </button>
-                <button class="next">
-                    <i class="xi-arrow-right"></i>
-                </button>
-            </div>
-
-        </section>
-
-        <section class="main_event default">
-            <div class="tit">
-                <h2>my cosmetics product</h2>
-                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, commodi!</p>
-                <div class="arrows">
-                    <button class="prev">
-                        <i class="xi-arrow-left"></i>
-                    </button>
-                    <button class="next">
-                        <i class="xi-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="inner--">
-                <div class="main_event_slide">
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_product_slide01.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide02.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide03.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide04.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide05.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                    <div class="itm">
-                        <figure>
-                            <img src="./images/main_content_slide06.jpg" alt="main_event">
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
+            </section>
+        </main>
+        <footer id="footer">
+            ft
+        </footer>
+    </div>
 </body>
 
 </html>
