@@ -1,23 +1,20 @@
 $(function () {
 
-    $(window).on('scroll', function () {
-        let sct = $(window).scrollTop();
-        if (sct > 0) {
-            $('#header').addClass('on')
-        } else {
-            $('#header').removeClass('on')
-        }
+
+
+    $('.main_product_slide').slick({
+        slidesToShow: 4,
+        arrows: false,
+        dots: true,
+    });
+
+    $('.main_product02 .arrows .prev').on('click', function () {
+        $('.main_product_slide').slick('slickPrev')
+    })
+    $('.main_product02 .arrows .next').on('click', function () {
+        $('.main_product_slide').slick('slickNext')
     })
 
 
 
-    const mainVisualSlide = new Swiper('.main_visual_slide', {
-        parallax: true,
-        loop: true,
-        speed: 1000,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-    });
 })
