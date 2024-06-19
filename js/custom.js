@@ -1,20 +1,11 @@
 $(function () {
 
 
-
-    $('.main_product_slide').slick({
-        slidesToShow: 4,
+    $(".main_visual_slide").slick({
         arrows: false,
         dots: true,
-    });
-
-    $('.main_product02 .arrows .prev').on('click', function () {
-        $('.main_product_slide').slick('slickPrev')
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     })
-    $('.main_product02 .arrows .next').on('click', function () {
-        $('.main_product_slide').slick('slickNext')
-    })
-
-
-
 })
